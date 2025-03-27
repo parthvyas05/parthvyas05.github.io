@@ -1,0 +1,781 @@
+/* Global Page Styling */
+body {
+    background-color: black;  /* Full page black background */
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Fix */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+    padding: 15px;
+    z-index: 1000;
+}
+
+/* Add space below the navbar */
+.upcoming-projects {
+    margin-top: 350px; /* Adjust this value if still overlapping */
+}
+
+/* General Section Styling */
+section {
+    padding: 40px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Heading Fix */
+h2, h3 {
+    text-align: center;
+    margin-top: 20px;  /* Space above headings */
+    margin-bottom: 20px;
+}
+
+/* Boxed Layout for Sections */
+.section-box {
+    background: rgba(255, 255, 255, 0.1);  /* Slight contrast */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Certificates Section */
+.certificate-section-container {
+    text-align: center;
+    margin-top: 30px; /* Reduced space */
+}
+
+/* Centered Certificates Heading */
+.certificate-heading {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px; /* Reduced space below heading */
+    padding: 12px 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.15);
+    display: inline-block;
+}
+
+/* Certificates Grid Layout */
+.certificate-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default: 4 certificates in a row */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    background: black;
+}
+
+/* Certificate Card */
+.certificate-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.15);
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 260px;
+}
+
+.certificate-card:hover {
+    transform: scale(1.05);
+}
+
+/* Certificate Images */
+.certificate-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Certificate Title Layover */
+.certificate-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px 0;
+    font-size: 18px;
+}
+
+/* Adjust Spacing from Upcoming Projects */
+/* Ensure Upcoming Projects Heading is Visible */
+.upcoming-projects {
+    margin-top: 80px; /* Ensure enough space below navbar */
+    padding-top: 20px; 
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    position: relative; /* Ensures it doesn’t get overlapped */
+    z-index: 10; /* Keeps it above other elements */
+}
+
+/* Fix for Smaller Screens */
+@media (max-width: 1024px) {
+    .upcoming-projects {
+        margin-top: 100px;
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .upcoming-projects {
+        margin-top: 160px; /* Moves heading further down */
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .upcoming-projects {
+        margin-top: 180px; /* More space for very small screens */
+        font-size: 22px;
+    }
+}
+
+/* Navbar Fixed to Prevent Overlapping */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px; /* Adjust navbar height */
+    background: black;
+    z-index: 1000;
+}
+
+/* Push the entire content down to prevent hiding */
+body {
+    padding-top: 80px; /* Adjust this to match the navbar height */
+}
+
+
+/* 🔹 Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .certificate-section {
+        grid-template-columns: repeat(3, 1fr); /* 3 certificates in a row for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .certificate-section {
+        grid-template-columns: repeat(2, 1fr); /* 2 certificates in a row for mobile */
+        gap: 15px;
+    }
+
+    .certificate-heading {
+        font-size: 26px; /* Slightly smaller heading */
+        padding: 10px 20px;
+    }
+
+    .certificate-card img {
+        height: 180px; /* Adjusted image height */
+    }
+
+    .certificate-title {
+        font-size: 16px; /* Slightly smaller text */
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .certificate-section {
+        grid-template-columns: repeat(1, 1fr); /* 1 certificate per row for small screens */
+        gap: 10px;
+    }
+
+    .certificate-heading {
+        font-size: 24px;
+        padding: 8px 18px;
+    }
+
+    .certificate-card img {
+        height: 160px; /* Further reduced height */
+    }
+
+    .certificate-title {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+}
+
+
+
+
+/* Upcoming Projects Section */
+/* Entire Section Background */
+.upcoming-projects-section {
+    background-color: #000; /* Black background */
+    padding: 30px 0; /* Reduced padding */
+    text-align: center;
+    color: white; /* White text */
+}
+
+/* Full-Screen Bar for Heading */
+.upcoming-title {
+    background-color: #ff9800; /* Orange Bar */
+    color: white; /* White text */
+    font-size: 24px; /* Reduced size */
+    font-weight: bold;
+    padding: 12px 0; /* Reduced padding */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+/* Flex container for projects */
+.upcoming-projects-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Reduced gap */
+    max-width: 900px; /* Reduced max width */
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Project Card */
+.upcoming-project-card {
+    background: #222; /* Dark gray card for contrast */
+    border-radius: 10px; /* Smaller border radius */
+    overflow: hidden;
+    width: 45%; /* Smaller width */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 15px; /* Reduced padding */
+}
+
+.upcoming-project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Image Styling */
+.upcoming-project-img {
+    width: 100%;
+    height: 200px; /* Reduced height */
+    position: relative;
+}
+
+.upcoming-project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay Text */
+.upcoming-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px; /* Smaller text */
+    font-weight: bold;
+}
+
+/* Project Details */
+.upcoming-project-details {
+    padding: 15px; /* Reduced padding */
+    text-align: left;
+    color: white; /* White text */
+    font-size: 14px; /* Smaller text */
+}
+
+/* Bullet Points */
+.upcoming-project-details ul {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.upcoming-project-details ul li {
+    margin-bottom: 5px; /* Reduced spacing */
+    font-size: 14px; /* Smaller text */
+    position: relative;
+    color: white; /* White text */
+}
+
+.upcoming-project-details ul li::before {
+    content: "•";
+    color: #ff9800; /* Orange bullet */
+    font-size: 16px; /* Smaller bullet */
+    position: absolute;
+    left: -12px;
+}
+
+/* Read More Section */
+.upcoming-read-more-content {
+    display: none;
+    margin-top: 8px;
+    padding: 10px;
+    background: #444; /* Darker background for contrast */
+    border-radius: 5px;
+    color: white; /* White text */
+    font-size: 14px; /* Smaller text */
+}
+
+/* Buttons */
+.upcoming-read-more-btn, .upcoming-read-less-btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 8px 12px; /* Reduced button size */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px; /* Smaller button text */
+}
+
+.upcoming-read-more-btn:hover {
+    background-color: #e68900;
+}
+
+.upcoming-read-less-btn {
+    background-color: red;
+}
+
+.upcoming-read-less-btn:hover {
+    background-color: darkred;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .upcoming-projects-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .upcoming-project-card {
+        width: 90%;
+    }
+}
+
+
+/* Navbar - Now touching the top */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #0f0f0f, #232323);
+    padding: 15px 0;
+    box-shadow: 0px 4px 20px rgba(255, 140, 0, 0.7);
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Centering Navbar */
+    align-items: center;
+}
+
+/* Navbar Container */
+.nav-container {
+    display: flex;
+    justify-content: center; /* Centering Links */
+    align-items: center;
+    width: 80%; /* Ensures it stays centered */
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Nav Items */
+.nav-links li {
+    display: inline-block;
+    position: relative;
+}
+
+/* Navbar Text Styling */
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect: Box with Shadow */
+.nav-links li a:hover {
+    color: black;
+    background-color: rgba(255, 165, 0, 0.9);
+    box-shadow: 0px 4px 10px rgba(255, 140, 0, 0.7);
+    border-radius: 8px;
+    padding: 12px 18px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Mobile Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* Hamburger Icon Visible */
+    .hamburger {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Navbar Hidden Initially */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        padding: 10px 0;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+    }
+
+    /* Show menu when active */
+    .nav-links.active {
+        display: flex;
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    /* Remove Extra Black Line */
+    .nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+    }
+
+    /* Shadow Effect on Hover in Mobile */
+    .nav-links li a:hover {
+        background: rgba(255, 165, 0, 0.8);
+        color: black;
+        border-radius: 5px;
+    }
+
+    /* Fix Overlapping Content Issue */
+    .content {
+        margin-top: 80px;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+/* Buy Me a Coffee Section */
+.buy-me-coffee {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgb(67, 68, 68);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.15);
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+/* Section Heading */
+.buy-me-coffee h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Description Text */
+.buy-me-coffee p {
+    font-size: 18px;
+    color: #cccccc;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+/* Buy Me a Coffee Button */
+.buy-coffee-btn {
+    background: #ffdd57;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    display: inline-block;
+}
+
+.buy-coffee-btn:hover {
+    background: #ffcc33;
+}
+
+/* Skills Section */
+.skills-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.15);
+}
+
+/* Section Title */
+.skills-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Skills Box */
+.skills-box {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Skills Box Heading */
+.skills-box h3 {
+    font-size: 22px;
+    color: #ffdd57;
+    margin-bottom: 15px;
+}
+
+/* Skills List */
+.skills-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-box ul li {
+    font-size: 16px;
+    color: #cccccc;
+    margin: 5px 0;
+}
+
+
+/* Experience Section */
+.experience-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #0a0a0a;
+    color: white;
+}
+
+/* Section Title */
+.experience-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffdd57;
+    margin-bottom: 20px;
+}
+
+/* Experience Container */
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Experience Card */
+.experience-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.experience-card:hover {
+    transform: scale(1.05);
+}
+
+/* Experience Header */
+.experience-header {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.experience-header h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffdd57;
+    margin: 0;
+}
+
+.experience-header .company {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+/* Date */
+.date {
+    font-size: 14px;
+    color: #aaaaaa;
+    margin-bottom: 10px;
+}
+
+/* Experience List */
+.experience-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.experience-card ul li {
+    font-size: 16px;
+    color: #cccccc;
+    margin: 5px 0;
+}
+
+/* Experience Letter Button */
+.exp-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #ffdd57;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.exp-button:hover {
+    background: #e6c144;
+}
+
+/* General Styling */
+/* Add spacing before social media section */
+.social-section {
+    margin-top: 50px; /* Adjust this value as needed */
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #121212; /* Dark theme */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Section Heading */
+.connect-with-me {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Follow Me Text */
+.follow-me {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Social Links Container */
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+}
+
+/* Social Media Buttons */
+.social-button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.social-button:hover {
+    background: linear-gradient(45deg, #feb47b, #ff7e5f);
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 14px;
+    opacity: 0.8;
+}
