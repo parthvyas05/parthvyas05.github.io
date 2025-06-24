@@ -1,0 +1,187 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-height body and html to cover the entire page */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Solid black background */
+    color: white;
+    text-align: center;
+}
+
+/* Centered content */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2em;
+}
+/* Navbar - Now touching the top */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #0f0f0f, #232323);
+    padding: 15px 0;
+    box-shadow: 0px 4px 20px rgba(255, 140, 0, 0.7);
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Centering Navbar */
+    align-items: center;
+}
+
+/* Navbar Container */
+.nav-container {
+    display: flex;
+    justify-content: center; /* Centering Links */
+    align-items: center;
+    width: 80%; /* Ensures it stays centered */
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Nav Items */
+.nav-links li {
+    display: inline-block;
+    position: relative;
+}
+
+/* Navbar Text Styling */
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect: Box with Shadow */
+.nav-links li a:hover {
+    color: black;
+    background-color: rgba(255, 165, 0, 0.9);
+    box-shadow: 0px 4px 10px rgba(255, 140, 0, 0.7);
+    border-radius: 8px;
+    padding: 12px 18px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Mobile Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* Hamburger Icon Visible */
+    .hamburger {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Navbar Hidden Initially */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        padding: 10px 0;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+    }
+
+    /* Show menu when active */
+    .nav-links.active {
+        display: flex;
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    /* Remove Extra Black Line */
+    .nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+    }
+
+    /* Shadow Effect on Hover in Mobile */
+    .nav-links li a:hover {
+        background: rgba(255, 165, 0, 0.8);
+        color: black;
+        border-radius: 5px;
+    }
+
+    /* Fix Overlapping Content Issue */
+    .content {
+        margin-top: 80px;
+        padding: 20px;
+        text-align: center;
+    }
+}

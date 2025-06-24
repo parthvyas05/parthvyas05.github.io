@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Research Papers</title>
+    <link rel="stylesheet" href="papers.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+               <!-- <li><a href="#">Blog</a></li>-->
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="talks.html">Talks</a></li>
+                <!-- <li><a href="#">Papers</a></li>-->
+                <li><a href="contact.html">Contact</a></li>
+                 
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Paper 1 -->
+        <div class="paper-card">
+            <h2>Weather Forecasting Using Machine Learning and Deep Learning Algorithms</h2>
+            <p class="abstract"><strong>Abstract:</strong> In this study the application of machine learning and deep learning techniques to Indian weather forecasting is investigated. We analyzed weather data from multiple cities using six machine learning methods such as CNNs and LSTMs and deep learning models including decision trees and random forests. The results indicate that deep learning approaches performed best in predicting temperature while decision tree regression performed best in predicting precipitation. These findings show the potential of advanced computer models to increase the accuracy of weather predictions with future research focusing on ensemble approaches and transfer learning for further optimization.</p>
+            <p class="summary"><strong>Summary:</strong> This research examines the use of machine learning and deep learning to enhance weather forecasting in India. It contrasts different models, determining that deep learning methods such as CNNs and LSTMs are most suitable for temperature prediction, and decision trees are more suitable for precipitation. The study identifies the possibility of using AI to make forecasts more accurate and proposes improvements in the future with ensemble techniques and transfer learning.</p>
+            <button class="read-btn" onclick="openPDF('https://drive.google.com/file/d/1uemQW8zY45LRGQ3EtZNwLmCQbHiZw0w9/view?usp=sharing')">Read Full Paper</button>
+
+        </div>
+
+        <!-- Paper 2 -->
+        <div class="paper-card">
+            <h2>Enhancing Research and Development to Transform Nuclear Energy with Machine Learning</h2>
+            <p class="abstract"><strong>Abstract:</strong> This research examines the application of machine learning in revolutionizing nuclear energy research and development. Through the processing of past data using sophisticated algorithms, it improves forecasting of energy production, efficiency, and support in sustainable decision-making.</p>
+            <p class="summary"><strong>Summary:</strong> The paper highlights how machine learning techniques, such as neural networks and decision trees, improve the accuracy of nuclear energy predictions. It emphasizes the role of AI in optimizing reactor performance, forecasting energy demands, and ensuring safer, more efficient nuclear energy utilization.</p>
+            <button class="read-btn" onclick="openPDF('https://drive.google.com/file/d/1_8EVaHhTqZtPkxmC7p9VUbTtEGVAyKej/view?usp=sharing')">Read Full Paper</button>
+        </div>
+
+        <!-- Paper 3 -->
+        <div class="paper-card">
+            <h2>Predicting Coma patient emotions based on a Real-World Study, 
+                using Machine Learning and Deep Learning Techniques </h2>
+            <p class="abstract"><strong>Abstract:</strong> This study applies machine learning and deep learning techniques to predict emotions in coma patients using physiological signals. By analyzing ECG, GSR, and EEG data, the model detects emotional states, aiding in better patient care and rehabilitation.</p>
+            <p class="summary"><strong>Summary:</strong> The research explores AI-driven emotion recognition in coma patients through deep learning models like CNNs and polynomial networks. By leveraging physiological data, the study enhances emotion detection accuracy, offering potential improvements in patient monitoring and rehabilitation strategies.</p>
+            <button class="read-btn" onclick="openPDF('https://www.riverpublishers.com/pdf/ebook/chapter/RP_9788770228299C40.pdf')">Read Full Paper</button>
+        </div>
+
+    </div>
+
+    <!-- PDF Viewer -->
+    
+   <!-- Footer -->
+<footer>
+    <p>© 2025 Parth Vyas</p>
+    <p>Blog on AI and CyberSecurity & other acronyms. All opinions are my own.</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+/* =================== GENERAL STYLES =================== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000; /* Black background */
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* =================== NAVBAR =================== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #0f0f0f, #232323);
+    padding: 8px 0; /* Reduced height */
+    box-shadow: 0px 4px 20px rgba(255, 140, 0, 0.7);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-links li a:hover {
+    color: black;
+    background-color: rgba(255, 165, 0, 0.9);
+    box-shadow: 0px 4px 10px rgba(255, 140, 0, 0.7);
+    border-radius: 8px;
+    padding: 8px 14px;
+}
+
+/* =================== CONTAINER FOR PAPERS =================== */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px; /* Added space to avoid overlapping with navbar */
+    padding: 20px;
+}
+
+/* =================== INDIVIDUAL PAPER CARDS =================== */
+.paper-card {
+    width: 60%;
+    background: #1e1e1e; /* Dark background for better contrast */
+    padding: 25px;
+    margin: 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.paper-card:hover {
+    transform: translateY(-5px);
+}
+
+/* =================== PAPER TITLE =================== */
+.paper-card h2 {
+    color: #ffa500; /* Orange title for better contrast */
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* =================== ABSTRACT & SUMMARY HEADINGS =================== */
+.abstract-title, .summary-title {
+    color: #ff9800; /* Bright Orange */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+}
+/* Abstract & Summary Headings */
+.abstract-heading, .summary-heading {
+    color: #ffa500; /* Orange color */
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+/* Abstract & Summary Headings */
+.abstract strong, .summary strong {
+    color: #ffa500; /* Orange color */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* =================== ABSTRACT & SUMMARY PARAGRAPHS =================== */
+.abstract, .summary {
+    font-size: 15px;
+    color: #ddd;
+    text-align: justify; /* Justify text for equal line length */
+    max-width: 90%;
+    margin: 0 auto; /* Center alignment */
+    line-height: 1.6; /* Better spacing */
+}
+/* Add spacing between Abstract and Summary paragraphs */
+.abstract {
+    margin-bottom: 15px; /* Adds space below the Abstract */
+}
+
+/* =================== READ FULL PAPER BUTTON =================== */
+.read-btn {
+    display: block;
+    width: 50%;
+    margin: 20px auto 0; /* Centered */
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Orange Gradient */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+.read-btn:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f); /* Reverse Gradient */
+}
+
+/* =================== PDF VIEWER =================== */
+.pdf-viewer {
+    display: none;
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    border: none;
+}
+
+/* =================== FOOTER =================== */
+footer {
+    background: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* =================== RESPONSIVE DESIGN =================== */
+@media (max-width: 768px) {
+    .paper-card {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 20px;
+    }
+
+    .abstract, .summary {
+        max-width: 100%;
+    }
+
+    .read-btn {
+        width: 80%; /* Adjust button size */
+    }
+}
+
+
+/* Navbar */
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #0f0f0f, #232323);
+    padding: 0px 0; /* Reduced padding to decrease height */
+    box-shadow: 0px 4px 20px rgba(255, 140, 0, 0.7);
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Centering Navbar */
+    align-items: center;
+}
+
+/* Navbar Links */
+.nav-links li a {
+    font-size: 16px; /* Adjusted size for better fit */
+    padding: 6px 12px; /* Reduced padding to align with smaller navbar */
+}
+
+/* Navbar Container */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Nav Items */
+.nav-links li {
+    display: inline-block;
+    position: relative;
+}
+
+/* Navbar Text Styling */
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-links li a:hover {
+    color: black;
+    background-color: rgba(255, 165, 0, 0.9);
+    box-shadow: 0px 4px 10px rgba(255, 140, 0, 0.7);
+    border-radius: 8px;
+    padding: 12px 18px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* =================== RESPONSIVE DESIGN =================== */
+@media (max-width: 1024px) {
+    .paper-card {
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background: #232323;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .paper-card {
+        width: 90%;
+        padding: 18px;
+    }
+
+    .read-btn {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 8px;
+    }
+
+    .hamburger {
+        font-size: 24px;
+    }
+
+    .paper-card {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .read-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
