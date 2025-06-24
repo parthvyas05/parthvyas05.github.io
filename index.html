@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Vyas - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="assets\Free Universe Stars Video Gif Animated Zoom Virtual Background.mp4" type="video/mp4"> <!-- Replace with your video -->
+    </video>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <!--<li><a href="blog.html">Blog</a></li>-->
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="talks.html">Talks</a></li>
+                <li><a href="papers.html">Papers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                 
+            </ul>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+    
+    
+    <!-- Centered Content -->
+    <div class="content">
+        <!-- Square Image -->
+        <div class="profile-container">
+            <img src="assets\images\20220519_165839.jpg" alt="Parth Vyas" class="profile-image">
+            <div class="overlay">
+                <h1 class="name">Hi, I'm <span>Parth Vyas</span></h1>
+                <h2 class="tagline">Innovating with Intelligence, Creating with Passion.</h2>
+                <p class="description">
+                    A passionate innovator with a vision to transform ideas into impactful solutions, driven by curiosity, creativity, and a steadfast commitment to excellence.
+                </p>
+                <a href="#">
+                    <button class="explore-btn">Explore My Work</button>
+                </a>
+                
+            </div>
+        </div>
+
+        <!-- About Me Section -->
+<section class="about-me">
+    <h2> </h2>
+    <p>With a deep proficiency in Python programming, AI model development, and data-driven solutions, I excel at tackling complex challenges through innovation. My work spans research, blog writing, and AI-driven applications designed to create meaningful impact.
+    </p>
+    <p>🚀 Passionate about ML & AI | 📊 Data Science Enthusiast | 🤖 Deep Learning Practitioner</p>
+</section>
+
+ <!-- CV Download -->
+<section class="download-cv">
+    <h2>⬇️Download My CV⬇️</h2>
+    <a href="assets/parthvyascv.pdf" class="cv-button" download>📄Access My CV</a>
+</section>
+
+<!-- Social Media Links -->
+<div class="connect-with-me">🌍 Connect with Me</div>
+<div class="follow-me">Follow me on social media to stay updated with my work</div>
+
+<div class="social-links">
+    <a href="https://www.linkedin.com/in/parth-vyas-769b06206/" class="social-button">🔗 LinkedIn</a>
+    <a href="https://github.com/parthvyas05" class="social-button">🐙 GitHub</a>
+    <!-- <a href="#" class="social-button">📄 ResearchGate</a> -->
+    <a href="#" class="social-button">🐦 Twitter</a>
+    <a href="https://www.instagram.com/ai_code_bytes?igsh=M2VveWd2YzVibmg3" class="social-button">📸 Instagram</a>
+</div>
+</div>
+
+<!-- WhatsApp Floating Button -->
+<div id="whatsapp-button">
+    <a href="https://wa.me/qr/GVABXORHP63WN1" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" />
+    </a>
+  </div>
+  <!-- WhatsApp Floating Button JavaScript -->
+
+  <section id="other-expertise">
+  <div class="expertise-container">
+    <h2>Other Areas of Expertise</h2>
+    <p>I’m not just an AI engineer — I also bring strategic value in business and leadership roles.</p>
+    
+    <div class="expertise-grid">
+      <div class="expertise-card">
+        <h3>Marketing & Sales</h3>
+        <p>Skilled in digital campaigns, client relationship management, and lead conversion strategies.</p>
+      </div>
+      <div class="expertise-card">
+        <h3>Project Management</h3>
+        <p>Experienced in agile workflows, sprint planning, and end-to-end product delivery.</p>
+      </div>
+      <div class="expertise-card">
+        <h3>Brand Strategy</h3>
+        <p>Strong understanding of brand building, positioning, and user engagement funnels.</p>
+      </div>
+      <div class="expertise-card">
+        <h3>Business Consulting</h3>
+        <p>Offer insights into market alignment, automation, and digital transformation initiatives.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+// Scroll animation (optional)
+
+
+ <!-- Job Change Advertisement -->
+<div id="jobAd">
+    <button class="close-btn" onclick="closeAd()">✖</button>
+    <img src="assets\parthvyas05.com.png" alt="Looking for Job Change">
+  </div>
+  
+  <!-- JavaScript to Close the Ad -->
+  <script>
+    function closeAd() {
+      document.getElementById("jobAd").style.display = "none";
+    }
+  </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var whatsappButton = document.getElementById('whatsapp-button');
+      whatsappButton.style.bottom = '30px'; // Change the distance from bottom as needed
+    });
+  </script>
+   
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Parth Vyas</p>
+    <p>Blog on AI and CyberSecurity & other acronyms. All opinions are my own.</p>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+    }
+    </script>
+    
+    
+        
+
+</body>
+</html>
